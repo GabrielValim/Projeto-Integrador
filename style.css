@@ -26,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5em 5em 3em 5em;
+    padding: 5%;
     gap: 10%;
 }
 
@@ -327,11 +327,11 @@ header {
 }
 
 @media screen and (max-width: 666px) { 
-    .apresentacao {
-        display: none;
-    }
     .apresentacao__cursos {
         width: 100%;
+    }
+    .cursos__titulo {
+        border-bottom: 1px solid #fff;
     }
     .rodape {
         flex-direction: column;
@@ -339,8 +339,10 @@ header {
 }
 
 
-
 @media screen and (max-width: 375px) {
+    .apresentacao {
+        display: none;   
+    }
     .card__countdown {
         display: none;
     }
