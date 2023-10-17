@@ -338,6 +338,12 @@ header {
     }
 }
 
+@media screen and (max-width: 410px) {
+    #modal {
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 375px) {
     .apresentacao__conteudo div {
