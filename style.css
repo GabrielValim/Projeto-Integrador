@@ -340,13 +340,20 @@ header {
 
 
 @media screen and (max-width: 375px) {
-    .apresentacao {
-        display: none;   
-    }
-    .card__countdown {
+    .apresentacao__conteudo div {
         display: none;
     }
-    .equipes__conteudo {
+    .apresentacao__conteudo__titulo {
+        display: none;
+    }
+    .apresentacao__conteudo__texto {
+        font-size: 15px;
+        margin: 1em;
+    }
+    .equipes__titulo{
+        font-size: 24px;
+    }
+    .card__countdown {
         display: none;
     }
     .equipes__logo {
@@ -364,12 +371,6 @@ header {
 }
 
 @media screen and (max-width: 320px) { 
-    .apresentacao {
-        display: none;
-    }
-    .equipes__conteudo {
-        display: none;
-    }
     .equipes__logo {
         width: 250px;
     }
