@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
 
 :root{
-    --font: 'Inter', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-lora: 'Lora', serif; ;
+    --text-color: #252525;
+    --primary-color: #19355A;
+    --secondary-color: #13488C;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
-    background: #001633;
-    box-sizing: border-box;
-    color: #fff;
-    height: 100vh;
-    font-family: 'Inter', sans-serif;;
+    background: #fff;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 78px;
 }
 
 .apresentacao {
@@ -37,66 +39,67 @@ header {
     width: 718px;
 }
 
+.apresentacao__conteudo img {
+    width: 430px;
+}
+
 .apresentacao__conteudo__titulo {
-    font-family: var(--font);
     font-size: 48px;
     font-weight: 600;
-    line-height: 61px;
-    letter-spacing: 0em;
     text-align: left;
+    font-family: var(--font-lora);
+    color: var(--text-color);
 }
 
 .titulo-destaque{
-    color:#5FC2D9;
+    color:#13488C;
 }
 
 .apresentacao__conteudo__texto {
-    font-family: var(--font);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
+    font-size: 24px;
     text-align: left;
+    font-weight: mixed;
+    font-family: var(--font-inter);
+    color: var(--text-color);
 }
 
-.apresentacao__links {
-    display: flex;
-    justify-content: space-between;    
-}
-
+.apresentacao__conteudo div p{
+    color:#13488C;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+}   
 
 .equipes {
-    padding: 12%;
-    background-image: url(./imgs/Fundo02.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 10%;
+    background-color: #162E4E;
 }
 
 .equipes__conteudo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12%;
+    margin-bottom: 10%;
 }
 
 .equipes__titulo {
-    font-family: var(--font);
-    font-size: 46px;
+    font-family: var(--font-lora);
+    font-size: 44px;
     font-weight: 600;
     line-height: 59px;
     text-align: left;   
-    width: 560px; 
+    width: 465px; 
+    color: #fff;
 }
 
 .equipes__texto {
     width: 677px;
-    font-family: var(--font);
-    font-size: 18px;
+    font-family: var(--font-inter);
+    font-size: 22px;
     font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
     text-align: left;
-
+    text-align: right;
+    color: #fff;
 }
 
 .equipes__lista {
@@ -104,132 +107,93 @@ header {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-}
-
-.equipes__logo {
-    width: 350px;
-}
-
-.card__countdown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 3.2rem;
-    border: 0.2rem solid  #144480;
-    background:  rgba(20, 68, 128, 0.30);
-    padding: 5.5rem;
-    margin: 0 20em 20em 20em;
-}
-
-.countdown__titulo {
-    font-family: var(--font);
-    font-size: 6em;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.countdown {
-    display: flex;
-    font-size: 6em;
-    color: #fff;
-    justify-content: center;     
-    gap: 3rem;
-}
-
-.countdown__item { 
-    text-align: center;
-    display: inline-block;
-    min-width: 90px;
-}
-
-.countdown__span {
-    color: #fff;
-    display: block;
-    font-size: .35em;
-    font-weight: 400;
+    gap: 10rem;
 }
 
 .cursos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./imgs/Fundo03.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 10%;
 }
 
 .apresentacao__cursos {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 635px;
-    gap: 60px;
+    gap: 15px;
 }
 
 .cursos__titulo {
-    font-family: var(--font);
-    font-size: 55px;
+    color: #162E4E;
+    font-family: var(--font-lora);
+    font-size: 48px;
     font-weight: 600;
-    line-height: 61px;
-    text-align: left;
 }
 
 .cursos__texto {
     font-family: var(--font);
     font-size: 20px;
     font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
     text-align: center;
+    width: 743px;
 }
 
 .lista__cursos {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10%;
-    gap: 70px;
+    margin: 5rem 2rem 5rem 2rem;
+    gap: 50px;
 }
 
 .cursos__item {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #13488C;
+    background: #162E4E;
+    padding: 1rem;
 }   
 
-.cursos__item img {
-    width: 276px;
-    height: 230px;
-    top: 282px;
-    left: 93px;
-    background-color: #fff;
+.modal-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
 }
 
-.links__curso {
-    display: flex;    
+.modal-conteudo_curso {
+    font-size: 16px;
+    font-family: var(--font-inter);
 }
 
-.links__cursos__curso {
-    background: #5FC2D926;
-    width: 200px;
-    text-align: center;
-    border-radius: 30px;
-    font-size: 18px;
+.modal-conteudo_curso_nome {
+    width: 197px;
+    font-family: var(--font-inter);
+    font-size: 16px;
+}
+.icon-modal {
+    width: 35px;
+    height: 35px;
+}
+
+.texto-modal {
+    width: 247px;
+    color: #FFF;
+    font-family: var(--font-inter);
+    font-size: 15px;
     font-weight: 600;
-    padding: 15px 0;
-    text-decoration: none;
-    color: #fff;
-    font-family: var(--font);
-    border: 1px solid #fff;
+
 }
+
 
 .rodape {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #245266;
+    background-color: #19355A;
     padding: 0 5%;
 }
 
@@ -237,19 +201,17 @@ header {
     width: 200px;
 }
 
+.rodape__direitos {
+    color: #fff;
+    font: var(--font-inter);
+    margin-top: 10px;
+}
 
 .rodape__conteudo__social {
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    padding: 1.5em 0;
-    gap: 10px;
-}
-
-.rodape__conteudo__social__texto {
-    font-size: 18px;
-    letter-spacing: 2px;
 }
 
 .social__lista {
@@ -262,128 +224,96 @@ header {
     width: 32px;
 }
 
-@media screen and (max-width: 1680px) { 
-    .card__countdown {
-        padding: 3rem;
-        margin: 0 15em 15em 15em;
-    }
-}
-
-@media screen and (max-width: 1440px) { 
-    .card__countdown {
-        padding: 3rem;
-        margin: 0 10em 15em 10em;
-    }
-    .equipes__titulo{
-        text-align: center;
-        width: 100%;
-    }
-    .equipes__texto{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .apresentacao img {
         display: none;
     }
-
-    .card__countdown {
-        padding: 3em;
-        margin: 0 7em 15em 7em;
-    }
-    .countdown__titulo {
-        font-size: 4em;
-        margin-bottom: .5em;
-    }
-    .countdown {
-        font-size: 4em;
-    }
-    .apresentacao__conteudo {
-        text-align: center;
-        width: 100%;
-    }
     .apresentacao__conteudo__titulo {
         text-align: center;
     }
     .apresentacao__conteudo__texto {
         text-align: center;
     }
+    .apresentacao__conteudo div p {
+        text-align: center;
+    }
+    .equipes__conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .equipes__titulo {
+        width: 613px;
+        font-size: 38px;
+        text-align: center;
+    }
+    .equipes__texto {
+        width: 662px;
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 870px) {
-    .card__countdown {
-        display: none;
-    }
+@media screen and (max-width: 746px) {
     .cursos__texto {
-        display: none;
+        width: 100%;
+    }
+    .equipes__titulo {
+        width: 100%;
+    }
+    .equipes__texto {
+        width: 100%;
+    }
+    .rodape__direitos {
+        font-size: 12px
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 720px) { 
+    .rodape {
+        flex-direction: column;
+    }
     .rodape__direitos {
         display: none;
     }
-}
-
-@media screen and (max-width: 666px) { 
-    .apresentacao__cursos {
-        width: 100%;
-    }
-    .cursos__titulo {
-        border-bottom: 1px solid #fff;
-    }
-    .rodape {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    #modal {
-        text-align: center;
+    .rodape__conteudo__social {
+        margin-bottom: 2rem;
     }
 }
 
 
-@media screen and (max-width: 375px) {
-    .apresentacao__conteudo div {
-        display: none;
+@media screen and (max-width: 428px) {
+    header img  {
+        width: 200px;
     }
     .apresentacao__conteudo__titulo {
-        display: none;
+        font-size: 20px;
     }
+
     .apresentacao__conteudo__texto {
-        font-size: 15px;
-        margin: 1em;
+        font-size: 16px;
     }
-    .equipes__titulo{
+    .apresentacao__conteudo div p {
+        font-size: 16px;
+    }
+
+    .equipes__titulo {
+        font-size: 18px;
+    }
+    .equipes__texto {
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+    .cursos__titulo {
         font-size: 24px;
     }
-    .card__countdown {
+    .cursos__texto {
+        font-size: 16px;
+    }
+    .cursos__item {
+    width: 276px;
+    }
+    .texto-modal {
         display: none;
     }
-    .equipes__logo {
-        width: 260px;
-    }
-    .apresentacao__cursos {
-        width: 100%;
-    }
-    .cursos__texto{
-        display: none;
-    }
-    .rodape {
-        flex-direction: column;
-    }
-}
 
-@media screen and (max-width: 320px) { 
-    .equipes__logo {
-        width: 250px;
-    }
-    .apresentacao__cursos {
-        width: 100%;
-    }
-    .modal-body p {
-        display: none;
-    }
 }
