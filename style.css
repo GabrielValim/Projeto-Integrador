@@ -315,5 +315,8 @@ header {
     .texto-modal {
         display: none;
     }
+    .modal-body-data-horario {
+        text-align: center;
+    }
 
 }
