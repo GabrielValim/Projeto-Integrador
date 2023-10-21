@@ -132,7 +132,7 @@ header {
 }
 
 .cursos__texto {
-    font-family: var(--font);
+    font-family: var(--font-inter);
     font-size: 20px;
     font-weight: 400;
     text-align: center;
